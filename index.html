@@ -19,7 +19,7 @@
 
             <!-- Navbar -->
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a style="font-size: 30px" class="navbar-brand" href="#">
+                <a style="font-size: 30px" class="navbar-brand" href="">
                     <img src="public/img/logoJs.png" class="d-inline-block align-top" width="40" height="40" alt="Logo JS">
                     Desafio JS
                 </a>
@@ -29,10 +29,7 @@
                 <div class="ml-5 collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Resolução <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Descrição</a>
+                            <a class="nav-link" href="https://station.rocketseat.com.br/api/files/1536687203601.pdf">Sobre o Desafio</a>
                         </li>
                     </ul>
                 </div>
@@ -56,26 +53,47 @@
 
                 <div class="card border-0">
                     <div class="card-body" id="list">
-                        <div class="media text-muted pt-3">
-                            <img src="https://avatars2.githubusercontent.com/u/2254731?v=4" width="80" height="80" class="mr-3">
-                            <p class="media-body pb-3 mb-0 lh-125 border-bottom border-gray">
-                                <strong class="d-block text-gray-dark">@username</strong>
-                                Nome: <br>
-                                URL: <br>
-                            </p>
-                            <button class="btn btn-info mr-2">
-                                <i class="far fa-eye"></i>
-                            </button>
-                            <button class="btn btn-danger">
-                                <i class="far fa-trash-alt"></i>
-                            </button>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
             <!-- /Container -->
 
         </div> <!-- /ContainerFluid-->
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <img id="avatar" class="img-fluid" src="" alt="" srcset="">
+                            </div>
+                            <div class="col">
+                                <strong>Name:</strong> <span id="name"></span> <br>
+                                <strong>Github:</strong> <a id="linkGithub" href="http://" target="_blank"> <span id="github"></span></a> <br>
+                                <strong>Email:</strong> <span id="email"></span> <br>
+                                <strong>Blog:</strong> <span id="blog"></span> <br>
+                                <strong>Company:</strong> <span id="company"></span> <br>
+                                <strong>Location:</strong> <span id="location"></span> <br>
+                                <strong>Bio:</strong> <span id="bio"></span> <br>                                
+                            </div>
+                        </div>                        
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /Modal -->
 
         <!-- Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
